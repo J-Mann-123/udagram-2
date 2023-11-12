@@ -1,0 +1,10 @@
+Infastructure
+
+Udagram, is built with a  frontend and backend: udagram-frontend and udagram-api
+
+udagram-frontend is built with React and it is hosted in AWS inside an S3 bucket
+
+udagram-api is made with TS and express.js. It is inside AWS and connected with Elastic Beanstalk
+
+Udagram is also integrated with a PostgreSQL DB which is in AWS and with RDS
+

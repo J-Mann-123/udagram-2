@@ -1,0 +1,27 @@
+Pipeline Description
+The application uses circleci which means that when a commit is pushed, circleci will 
+run the pipeline and a series of events will be executed 
+
+Build step:
+spin up environment
+preparing environment variables
+install node.js 16.20
+checkout code
+install AWS CLI - latest
+configure AWS Access Key ID
+install front-end dependencies
+install API dependencies
+Frone-end lint
+front-end build
+api build
+
+Hold for approval before deploy step
+
+Deploy step:
+spin up environment
+preparing environment variables
+install node.js 16.20
+install AWS CLI - latest
+configure AWS Access Key ID
+checkout code
+deploy app
