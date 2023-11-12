@@ -27,7 +27,7 @@ jobs:
       # Install dependencies in the the backend API          
       - run:
           name: Install API Dependencies
-          command: npm run backend:install
+          command: npm run api:install
       # Lint the frontend
       - run:
           name: Front-End Lint
@@ -39,7 +39,7 @@ jobs:
       # Build the backend API      
       - run:
           name: API Build
-          command: npm run backend:build
+          command: npm run api:build
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -58,19 +58,19 @@ jobs:
             echo "# TODO: Install, build, deploy in both apps"
       - run:
           name: Back-End Install
-          command: npm run backend:install
+          command: npm run api:install
       - run:
           name: Front-End Install
           command: npm run frontend:install
       - run:
           name: Back-End Build
-          command: npm run backend:build
+          command: npm run api:build
       - run:
           name: Front-End Build
           command: npm run frontend:build
       - run:
           name: Back-End Deploy
-          command: npm run backend:deploy
+          command: npm run api:deploy
       - run:
           name: Front-End Deploy
           command: npm run frontend:deploy
