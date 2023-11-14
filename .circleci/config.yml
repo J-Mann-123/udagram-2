@@ -29,10 +29,10 @@ jobs:
           name: Install API Dependencies
           command: npm run api:install
       # Install 7zip for windows
-      - run:
-          name: Install 7-Zip
-          command: |
-            choco install 7zip.install -y
+      # - run:
+      #     name: Install 7-Zip
+      #     command:
+      #       choco install 7zip.install -y
       # Lint the frontend
       - run:
           name: Front-End Lint
