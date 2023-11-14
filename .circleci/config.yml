@@ -28,10 +28,6 @@ jobs:
       - run:
           name: Install API Dependencies
           command: npm run api:install
-      # Install dependencies in the the frontend   
-      - run:
-          name: Front-End Install
-          command: npm run frontend:install
       # Install 7zip for windows
       # - run:
       #     name: Install 7-Zip
