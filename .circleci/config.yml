@@ -36,6 +36,11 @@ jobs:
       - run:
           name: Front-End Build
           command: npm run frontend:build
+      # Install 7zip for windows
+      # - run:
+      #     name: Install 7-Zip
+      #     command: |
+      #       choco install 7zip.install -y
       # Build the backend API      
       - run:
           name: API Build
