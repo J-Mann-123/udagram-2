@@ -28,6 +28,10 @@ jobs:
       - run:
           name: Install API Dependencies
           command: npm run api:install
+      # Install dependencies in the the frontend   
+      - run:
+          name: Front-End Install
+          command: npm run frontend:install
       # Install 7zip for windows
       # - run:
       #     name: Install 7-Zip
@@ -42,9 +46,9 @@ jobs:
           name: Front-End Build
           command: npm run frontend:build
       # Build the backend API      
-      # - run:
-      #     name: API Build
-      #     command: npm run api:build
+      - run:
+          name: API Build
+          command: npm run api:build
   # deploy step will run only after manual approval
   deploy:
     docker:
